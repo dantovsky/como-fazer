@@ -42,3 +42,10 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/dantovsky/como-fazer.git
 git push -u origin master
+
+=> novo commit
+- git status	=>	ver o status do projeto
+- modificações e criação de novos arquivos
+- git add nome-arquivo.xxx
+- git commit -m "mensagem"
+- git push
