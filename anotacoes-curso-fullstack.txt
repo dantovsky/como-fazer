@@ -26,3 +26,19 @@ Permite a utilização de AJAX
 
 # Body Parser :: Pegar os dados enviados para o servidor
 - npm install body-parser
+
+# GitHub
+criamos um novo projeto (https://github.com/dantovsky/como-fazer)
+- git init	=>	no CMD, dentro da pasta raiz do projeto, fizemos: git init
+- criamos o arquivo .gitignore
+- adicionamos o "node_modules" ao arquivo .gitignore
+- git add .	=>	para adicionar tudo ao projeto no Git
+- git commit -m "mensagem do commit"
+
+…or create a new repository on the command line
+echo "# como-fazer" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/dantovsky/como-fazer.git
+git push -u origin master
