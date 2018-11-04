@@ -1,0 +1,35 @@
+<%- include('../header') %>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <a href="/publicacoes/nova" class="btn btn-success btn-sm">Add nova publicação</a><br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-hover table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Publicação</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% publicacoes.forEach(publicacao => { %>
+                    <tr>
+                        <th scope="row">
+                            <!-- navegando sobre os documento JSON -->
+                            <%= publicacao.titulo %>
+                        </th>
+                        <td>
+                            <a href="/publicacoes/editar/<%= categoria %>/<%= publicacao.id %>" class="btn btn-info btn-sm">Editar</a>
+                            <a href="/publicacoes/excluir/<%= categoria %>/<%= publicacao.id %>" class="btn btn-light btn-sm">Excluir</a> <br />
+                        </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<%- include('../footer') %>

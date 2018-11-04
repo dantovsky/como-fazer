@@ -1,0 +1,28 @@
+11:44 01/11/2018
+
+# Para iniciar um projeto web:
+- inicia o cmd
+- vai até uma pasta escolhida
+- comando para iniciar um projeto: npm init
+	Isto irá criar o arquivo package.json, onde descreve todo o nosso projeto e pode gerir as dependencias
+- comando para instalar o express: npm instal express
+	Inicia algumas dependências e cria o arquivo package-lock.json, onde faz as dependências de outras dependências
+
+# Var dinamica
+Ao usar crase no lugar de aspas simples ou duplas, podemos fazer "template streaming", pode-se entao usar variavel dinamica, por exemplo:
+let i = 10
+app.get('/', (request, response) => {
+    i++
+    response.send(`<h1>Olá Fullstack Lab ${i}</h1>`)
+})
+
+# Instalacao do ejs
+ejs é uma linguagem de template :: permite que crie alguns arquivos para ajudar a manipular o HTML unto com o express
+- comando: npm install ejs
+
+# Instalação do axios
+Permite a utilização de AJAX
+- comando: npm instal axios
+
+# Body Parser :: Pegar os dados enviados para o servidor
+- npm install body-parser

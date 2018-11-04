@@ -1,0 +1,15 @@
+<%- include('../header') %>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <form method="POST" action="/categorias/nova">
+                <div class="form-group">
+                    <label for="categoria">Categoria</label>
+                    <input type="text" class="form-control" id="categoria" placeholder="Digite a categoria">
+                </div>
+                <button type="submit" class="btn btn-info">SALVAR</button>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('../footer') %>
